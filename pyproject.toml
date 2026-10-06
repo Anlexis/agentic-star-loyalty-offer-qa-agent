@@ -1,0 +1,77 @@
+[project]
+name = "ret-c2-087"
+version = "0.1.1"
+description = "LoyaltyOfferQAAgent — AgentCore Template"
+requires-python = ">=3.11"
+# The framework (agenticstar-agentcore) is NOT a public-PyPI dependency; it is
+# provided by CI per repository generation — a stub package on PYTHONPATH for older repos,
+# or installed from the package registry for wheel-era repos (see the dual-mode
+# run-tests job in the pipeline definition). Pinning it here would make `pip install -e .`
+# fail because it is not resolvable from the default index.
+dependencies = [
+    "agenticstar-agentcore[marketplace,openai]==1.0.3",]
+
+[project.optional-dependencies]
+dev = [
+    "pytest==9.0.3",
+    "pytest-cov==5.0.0",
+    "pytest-asyncio==1.4.0",
+    "ruff==0.4.4",
+    "mypy==1.10.0",
+    "types-PyYAML==6.0.12.20260815",
+]
+
+[build-system]
+requires = ["setuptools==68.2.2"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+# Keep a bare repository-wide `pytest` collecting the same suite CI does.
+#
+# scripts/test_gitlab_ci_stage_matrix.py is not a test of this template. It is a
+# regression test for the SHARED scaffold CI definition, distributed verbatim to every
+# template by the central scripts/ resync. It resolves its subject as
+#   Path(__file__).resolve().parent.parent / "the pipeline definition"
+# which in the scaffold repository is scaffold/the pipeline definition — the full inline stage-gate
+# matrix it asserts against — but in a template repository is this project's own
+# the pipeline definition, which is deliberately nothing but the shared `include:`. Against an
+# include-only file every one of its structural assertions fails (the parsed document is
+# just {"include": [...]}), and its the manifest specification lookup, Path(__file__).parents[2], points
+# outside the repository altogether.
+#
+# The file's own docstring records the intent: it "runs in review-criteria dev/CI only",
+# and the shared run-tests job honours that by invoking `pytest tests/`. Only a bare
+# `pytest` from the repository root collects it. Excluding it here restores agreement
+# between the local command and the pipeline.
+#
+# Done in repo-local config rather than by editing or deleting the script, so the
+# distributed copy stays byte-identical to scaffold@develop and a later resync cannot
+# silently undo this.
+addopts = "--ignore=scripts/test_gitlab_ci_stage_matrix.py"
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+# The modules under src/examples/ are read-only composition illustrations that
+# ship as reference material; they are excluded rather than edited.
+exclude = ["src/examples/"]
+# Framework-wheel compatibility exception: the published agenticstar-agentcore
+# wheel ships no py.typed marker, so framework.* / shared.* imports resolve to
+# Any — which makes every required framework subclass an [import-untyped] /
+# "subclass of Any" error. All other strict settings stay on.
+disallow_subclassing_any = false
+
+[[tool.mypy.overrides]]
+module = ["framework.*", "shared.*"]
+ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+# Same root cause, in the one place it cannot be expressed above: with the
+# untyped wheel AgentState resolves to Any, so `class State(AgentState)` reports
+# [valid-type] on every declared field. One cause, not field-level defects.
+module = ["src.schemas.state"]
+disable_error_code = ["valid-type"]

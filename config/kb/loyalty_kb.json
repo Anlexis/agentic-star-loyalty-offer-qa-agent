@@ -1,0 +1,98 @@
+[
+  {
+    "id": "kb-001",
+    "title": "How points are earned on purchases",
+    "category": "program_rules",
+    "source": "Loyalty Program Rules, section 2 (Earning)",
+    "tags": ["points", "earning", "rate", "tier", "multiplier", "purchase"],
+    "content": "Members earn 1 point for every 100 yen spent on eligible purchases, rounded down to the nearest whole point. Silver members earn at 1x, Gold members at 1.5x, and Platinum members at 2x the base rate. Points post to the member's account within 3 business days of the purchase being finalized. Purchases made with a store credit or a fully-redeemed gift card do not earn additional points on the redeemed portion."
+  },
+  {
+    "id": "kb-002",
+    "title": "Points expiry policy",
+    "category": "program_rules",
+    "source": "Loyalty Program Rules, section 5 (Expiry)",
+    "tags": ["points", "expiry", "expire", "inactive", "renewal"],
+    "content": "Points expire 24 months after the date they were earned if the member's account has had no earning or redemption activity in that window. Any earning or redemption activity resets the expiry clock for the member's entire points balance. Members receive an expiry-warning notice 30 days before any points are scheduled to lapse. Expired points cannot be reinstated except in the case of a documented system error."
+  },
+  {
+    "id": "kb-003",
+    "title": "Membership tiers and benefits",
+    "category": "program_rules",
+    "source": "Loyalty Program Rules, section 1 (Tiers)",
+    "tags": ["tier", "bronze", "silver", "gold", "platinum", "benefits", "status"],
+    "content": "The program has four tiers: Bronze (entry, 0+ points earned in the last 12 months), Silver (5,000+), Gold (15,000+), and Platinum (40,000+). Tier is recalculated on a rolling 12-month basis. Higher tiers earn points faster (see the earning-rate note) and unlock benefits such as free shipping thresholds, early access to promotions, and a dedicated member-services line. Tier benefits apply from the date the tier is reached and are not retroactive to earlier purchases."
+  },
+  {
+    "id": "kb-004",
+    "title": "Points transfer and account combining",
+    "category": "program_rules",
+    "source": "Loyalty Program Rules, section 6 (Account Integrity)",
+    "tags": ["transfer", "combine", "household", "account", "sharing"],
+    "content": "Points are non-transferable between member accounts, including between household members, and cannot be combined, gifted, sold, or exchanged for cash outside the redemption catalog. Each member's points balance is tied exclusively to that member's own account. A CSR cannot move points from one member's account to another under any circumstance; requests of this kind should be declined and escalated to program management if the caller insists."
+  },
+  {
+    "id": "kb-005",
+    "title": "CSR handling of member questions and identity verification",
+    "category": "program_rules",
+    "source": "Member Services Handbook, section 3 (CSR Conduct)",
+    "tags": ["csr", "verification", "identity", "member services", "escalation"],
+    "content": "When a CSR is relaying a question on a member's behalf, the CSR must verify the member's identity through the loyalty platform's standard verification flow before discussing anything account-specific; this Q&A knowledge base answers policy and catalog questions only and does not perform or substitute for that verification. Do not read back or confirm a specific points balance, card number, or other account identifier during the call - policy questions (earning rate, expiry, redemption rules, promotions) can be answered without touching account data."
+  },
+  {
+    "id": "kb-006",
+    "title": "Active promotion: double-points weekend",
+    "category": "offer_catalog",
+    "source": "Current Promotions Bulletin, campaign DPW-2026-07",
+    "tags": ["promotion", "double points", "weekend", "campaign", "active"],
+    "content": "During the double-points weekend campaign, members earn 2x points on eligible purchases made Friday through Sunday at participating stores and on the website. Eligible purchases exclude gift-card purchases, tobacco, alcohol where prohibited, and prior-sale clearance items. The bonus points post within the standard 3-business-day window alongside base points. Terms and eligible categories are subject to change with notice on the program website; this listing reflects the terms current as of the knowledge base's last refresh and must be verified against the live promotions page before a member is told they qualify."
+  },
+  {
+    "id": "kb-007",
+    "title": "New member welcome bonus",
+    "category": "offer_catalog",
+    "source": "Current Promotions Bulletin, evergreen offer NMW-001",
+    "tags": ["welcome", "bonus", "new member", "signup", "offer"],
+    "content": "New members receive a one-time 500-point welcome bonus after completing their first qualifying purchase of 2,000 yen or more within 60 days of enrollment. The bonus posts within 5 business days of the qualifying purchase. The welcome bonus is available once per member and is not available to members who have held a loyalty account in the prior 12 months, including a closed or expired account."
+  },
+  {
+    "id": "kb-008",
+    "title": "Birthday month bonus points",
+    "category": "offer_catalog",
+    "source": "Current Promotions Bulletin, evergreen offer BDAY-001",
+    "tags": ["birthday", "bonus", "anniversary", "offer"],
+    "content": "Members with a verified birth month on file receive a 250-point bonus automatically credited on the first day of their birthday month, provided the account has had at least one qualifying purchase in the preceding 12 months. The bonus is not retroactive if the birth month is added or corrected after that month has passed; it will apply starting the following year."
+  },
+  {
+    "id": "kb-009",
+    "title": "Partner-brand discount offer",
+    "category": "offer_catalog",
+    "source": "Current Promotions Bulletin, partner offer PTR-2026-014",
+    "tags": ["partner", "brand", "discount", "stacking", "expiry"],
+    "content": "Select partner-brand items carry a member-exclusive 10% discount, redeemable at checkout by applying the member's loyalty ID at the register or online account. This offer expires at the end of the current promotional quarter and does not stack with other percentage-off promotions, though it does stack with points earning. Discount eligibility and the exact expiry date are set by the partner brand and listed on the current promotions page; always confirm the live expiry date rather than assuming this entry is current."
+  },
+  {
+    "id": "kb-010",
+    "title": "Redemption options overview",
+    "category": "redemption_catalog",
+    "source": "Redemption Catalog, overview",
+    "tags": ["redemption", "gift card", "merchandise", "cash back", "donation", "options"],
+    "content": "Points can be redeemed for: (1) digital gift cards in fixed denominations (500, 1,000, 2,500, and 5,000 yen), (2) merchandise catalog items at the listed point price, (3) cash-back as a statement credit toward a future purchase, or (4) a charitable donation to a partnered organization at a 1-point-to-1-yen rate. Redemption is self-service through the member's online account or can be requested through member services on the member's behalf once their identity is verified."
+  },
+  {
+    "id": "kb-011",
+    "title": "Minimum redemption threshold and increments",
+    "category": "redemption_catalog",
+    "source": "Redemption Catalog, section 2 (Thresholds)",
+    "tags": ["minimum", "threshold", "increment", "points", "redeem"],
+    "content": "The minimum redemption amount is 500 points, and redemptions above the minimum must be made in increments of 100 points. A 500-yen digital gift card costs 500 points; a 1,000-yen gift card costs 1,000 points; larger denominations scale at the same 1-point-to-1-yen rate. A member's account must hold at least the minimum threshold in unexpired, available points before any redemption can be initiated - a partial or pending points balance from a very recent purchase may not yet be available to redeem."
+  },
+  {
+    "id": "kb-012",
+    "title": "Redemption processing time and cancellation policy",
+    "category": "redemption_catalog",
+    "source": "Redemption Catalog, section 4 (Processing)",
+    "tags": ["processing", "cancellation", "digital", "merchandise", "shipping"],
+    "content": "Digital gift-card and cash-back redemptions process within 1 business day and cannot be cancelled once submitted. Merchandise redemptions ship within 5-7 business days and can be cancelled for a full points refund only before the item has shipped; once shipped, the standard merchandise return policy applies instead of a points refund. Charitable-donation redemptions are final immediately upon submission."
+  }
+]
